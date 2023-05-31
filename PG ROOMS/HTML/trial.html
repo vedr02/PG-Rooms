@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="/CSS/trial.css">
+    <!-- <style>
+        body{
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+        }
+    </style> -->
+</head>
+<body>
+    <div class="container-fluid header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1><span>N</span>IKE</h1>
+            </div>
+            <div class="filter_button">
+                <button onclick="openFilter()">Open Filter</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- filter section -->
+
+    <div class="filter" id="filter" >
+        <div class="filter_section">
+            <h2>FILTER</h2>
+            <H3>SEARCH PRODUCT</H3>
+            <div class="user__inp">
+                <input type="text" placeholder="Product Name">
+            </div>
+
+            <H3>SELECT YOUR CATEGORY</H3>
+            <div class="user_inp">
+                <select name="" id="" onchange="setFilter('category',this.value), filterData()">
+                    <option value="">Select Category</option>
+                    <option value="T-shirt">T-shirt</option>
+                    <option value="Shirt">Shirt</option>
+                    <option value="Jeans">Jeans</option>
+                    <option value="Shorts">Shorts</option>
+                </select>
+            </div>
+
+            <H3>ENTER MIN AND MAX PRICE</H3>
+            <div class="user_inp">
+                <div class="min_max_price">
+                    <p>Min</p>
+                    <input type="number" name="" id="min" onkeyup="setFilter('minPrice',this.value), filterData()">
+                </div>
+                <div class="min_max_price">
+                    <p>Max</p>
+                    <input type="number" name="" id="max" onkeyup="setFilter('maxPrice',this.value), filterData()">
+                </div>
+            </div>
+
+            <div class="user_input">
+                <button onclick="filterData()">Filter</button>
+                <button onclick="openFilter()">Close Filter</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- product section -->
+    <div class="container-fluid main">
+        <div class="container main-container" id="card_product">
+            
+        </div>
+    </div>
+
+     <!-- //footer section -->
+     <div class="container-fluid footer">
+        <div class="container footer-container">
+            <p>Copyright 2023 | All rights reserved | Designed and managed by <a href="" target="_blank">Vedant Rahate</a></p>
+        </div>
+    </div>
+
+
+
+    <script src="/JAVASCRIPT/trial.js"></script>
+ </body>
+</html>

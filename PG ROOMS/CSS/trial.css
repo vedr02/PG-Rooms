@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-fluid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    max-width: 1100px;
+    width: 100%;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background-color:aqua;
+}
+.header-container{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 0px solid black; */
+}
+
+.logo>h1>span{
+    color:brown;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color: turquoise;
+    font-size: 20px;
+    color:bisque;
+    cursor:pointer;
+    border-radius: 10px;
+}
+
+.filter{
+    height: 100vh;
+    width: 35%;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.35) 5px 10px 15px;
+    position: fixed;
+    top: 15;
+    left: 0;
+    z-index: 2;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-left: -35%;
+    transition: .3s;
+}
+
+.filter_section{
+    border: 2px solid black;
+    padding: 20px;
+}
+
+/* .user_inp>input{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    font-size: 15px;
+    outline: none;
+} */
+
+.user_inp{
+    margin-bottom: 20px;
+}
+
+.user_inp>input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    font-size: 15px;
+    outline: none;
+}
+
+.user_inp>select{
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    outline: none;
+}
+
+.user_inp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.min_max_price{
+    display:flex;
+    width: 50%;
+    padding: 10px;
+    font: 15px;
+}
+
+.min_max_price>input{
+    display:flex;
+    width: 30%;
+}
+
+
+.main{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.main-container{
+    width:100%;
+    display: flex;
+    column-gap: 5%;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.card_item{
+    width: 30%;
+    box-shadow:rgba(0,0,0,0.35) 5px 10px 15px;
+}
+
+.img_container{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.product_name{
+    padding: 15px 20px;
+}
+
+
+.product_info{
+    padding: 15px 20px;
+}
+
+.product_info>h2{
+    font-size: 20px;
+    color: rgb(17, 186, 167);
+    margin-bottom: 10px;
+}
+
+.product_info>p{
+    font: 10px;
+}
+
+/* //footer section */
+
+.footer{
+    padding: 20px 0px;
+    background-color: black;
+    color: white;
+}
+
+.footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container>p>a{
+    text-decoration: none;
+    color: rgb(124, 124, 245);
+}
